@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amira Alazaz - Interior Design Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Amira Alazaz</div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-image">
+          <div class="image-overlay"></div>
+          <img src="static/profile.jpeg" alt="Interior Design" />
+        </div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Amira Alazaz</h1>
+            <div class="title-underline"></div>
+            <p class="hero-description">
+              Transforming spaces into timeless experiences through thoughtful
+              design, where every detail tells a story and functionality meets
+              elegance.
+            </p>
+            <div class="hero-buttons">
+              <a href="#portfolio" class="btn btn-primary">Explore Now</a>
+
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/amira-alazaz-973148313/"
+                target="_blank"
+                class="btn btn-icon"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <!-- Behance -->
+              <a
+                href="https://www.behance.net/amiraalazaz?tracking_source=search_projects%7Camiraalazaz"
+                target="_blank"
+                class="btn btn-icon"
+              >
+                <i class="fab fa-behance"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">Creating Spaces That Inspire</h2>
+            <p class="about-description">
+              As an interior designer, I believe every space tells a story. I'm
+              drawn to the emotional side of design — how textures, colors, and
+              light come together to shape atmosphere and mood. My work blends
+              creativity with functionality, creating environments that not only
+              look beautiful but feel right.
+            </p>
+            <p class="about-description">
+              With a focus on sustainable materials and timeless aesthetics, I
+              approach each project as a unique opportunity to transform spaces
+              into places where people love to live, work, and gather.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="static/01 ASAYAT/F (6).jpg"
+              alt="Designer at work"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Explore my latest interior design projects
+          </p>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Projects will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <span class="section-label">Get In Touch</span>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-description">
+              Ready to transform your space? I'd love to hear about your project
+              and explore how we can bring your vision to life.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <svg
+                  class="contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>amiraalazaz@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <svg
+                  class="contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <span>+20 120 103 4445</span>
+              </div>
+              <div class="contact-item">
+                <svg
+                  class="contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>Alexandria, Egypt</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-input"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-input"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <p>&copy; 2026 Amira Alazaz. All rights reserved.</p>
+          </div>
+          <div class="footer-right">
+            <a href="https://www.behance.net/amiraalazaz?tracking_source=search_projects%7Camiraalazaz" class="social-link">Behance</a>
+            <a href="https://www.linkedin.com/in/amira-alazaz-973148313/" class="social-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="projects-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

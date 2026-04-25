@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Amira Alazaz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Amira Alazaz</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="project-hero-image">
+            <img id="projectHeroImage" src="" alt="Project">
+            <div class="image-overlay"></div>
+        </div>
+        <div class="project-hero-content">
+            <a href="index.html#portfolio" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Portfolio
+            </a>
+            <h1 id="projectTitle" class="project-title"></h1>
+            <p id="projectCategory" class="project-category"></p>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-info-grid">
+                <!-- Overview -->
+                <div class="project-overview">
+                    <h2 class="detail-heading">Project Overview</h2>
+                    <p id="projectDescription" class="detail-text"></p>
+                </div>
+
+                <!-- Specifications -->
+                <div class="project-specs">
+                    <h3 class="spec-heading">Project Information</h3>
+                    <div class="spec-list">
+                        <div class="spec-item">
+                            <span class="spec-label">Assigned By</span>
+                            <span id="projectAssignedBy" class="spec-value"></span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Location</span>
+                            <span id="projectLocation" class="spec-value"></span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Year</span>
+                            <span id="projectYear" class="spec-value"></span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Software Used</span>
+                            <span id="projectSoftware" class="spec-value"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Concept -->
+            <div class="design-concept">
+                <h2 class="detail-heading">Design Concept</h2>
+                <p id="designConcept" class="detail-text"></p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="key-features">
+                <h2 class="detail-heading">Key Features</h2>
+                <ul id="keyFeatures" class="features-list">
+                    <!-- Features will be loaded dynamically -->
+                </ul>
+            </div>
+
+            <!-- Requirements & Challenges -->
+            <div class="requirements-section">
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <h3 class="card-heading">Client Requirements</h3>
+                        <ul id="clientRequirements" class="requirement-list">
+                            <!-- Requirements will be loaded dynamically -->
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h3 class="card-heading">Design Challenges</h3>
+                        <ul id="designChallenges" class="requirement-list">
+                            <!-- Challenges will be loaded dynamically -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Gallery -->
+            <div class="project-gallery">
+                <h2 class="detail-heading">Project Gallery</h2>
+                <div id="projectGallery" class="gallery-grid">
+                    <!-- Gallery images will be loaded dynamically -->
+                </div>
+            </div>
+
+            <!-- Materials & Colors -->
+            <div class="materials-section">
+                <h2 class="detail-heading">Materials & Color Palette</h2>
+                <div class="materials-grid">
+                    <div class="materials-card">
+                        <h3 class="card-heading">Materials Used</h3>
+                        <ul id="materialsList" class="materials-list">
+                            <!-- Materials will be loaded dynamically -->
+                        </ul>
+                    </div>
+                    <div class="colors-card">
+                        <h3 class="card-heading">Color Palette</h3>
+                        <div id="colorPalette" class="color-swatches">
+                            <!-- Colors will be loaded dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation to other projects -->
+            <div class="project-navigation">
+                <a href="index.html#portfolio" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <p>&copy; 2026 Amira Alazaz. All rights reserved.</p>
+          </div>
+          <div class="footer-right">
+            <a href="https://www.behance.net/amiraalazaz?tracking_source=search_projects%7Camiraalazaz" class="social-link">Behance</a>
+            <a href="https://www.linkedin.com/in/amira-alazaz-973148313/" class="social-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+</footer>
+
+    <script src="projects-data.js"></script>
+    <script src="project-detail.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
